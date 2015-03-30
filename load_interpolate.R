@@ -17,3 +17,8 @@ distance[1]=0
 distance[2:(length(tmp)+1)]=tmp
 rm(tmp)
 
+# interpolate onto a regular 0.25km grid
+new.dist <- 
+  
+new.data <- interp1(cl.data$, distance, xi, method = c("linear", "nearest", "pchip", "cubic", "spline"), 
+                    extrap = NA, ...)
